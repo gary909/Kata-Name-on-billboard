@@ -1,5 +1,9 @@
 function billboard(name, price = 30) {
-
+    var myPrice = 0;
+    for (var i = 0; i < name.length; i++) {
+        myPrice = myPrice + price;
+    }
+    return myPrice;
 }
 
 console.log(billboard("Jeong-Ho Aristotelis")); // 600
